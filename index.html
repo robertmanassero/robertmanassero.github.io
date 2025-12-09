@@ -72,7 +72,21 @@
       border-radius: 16px;
       box-shadow: 0 12px 24px var(--shadow);
     }
-    .timeline { position: relative; margin-top: 60px; padding-left: 72px; }
+    .timeline {
+      position: relative;
+      margin-top: 60px;
+      padding-left: 72px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 32px;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
     .event {
       margin-bottom: 60px;
       position: relative;
@@ -193,6 +207,14 @@
         </ul>
       </div>
       <div class="card">
+        <h3>EU Data Center & Data Sovereignty</h3>
+        <p>Led delivery of HP’s first EU-based data center supporting enterprise data residency and sovereignty requirements.</p>
+        <ul>
+          <li>Enabled regional compliance without compromising UX</li>
+          <li>Partnered across legal, infrastructure, and engineering</li>
+        </ul>
+      </div>
+      <div class="card">
         <h3>Rapid Prototyping & Experimentation</h3>
         <p>Drove rapid prototyping with design teams, building dozens of prototypes to accelerate experimentation and validation.</p>
         <ul>
@@ -206,9 +228,7 @@
   <section id="experience" class="section">
     <h1>Experience</h1>
     <div class="timeline">
-      <svg viewBox="0 0 200 800" preserveAspectRatio="none" style="position:absolute;left:24px;top:0;height:100%;width:40px;">
-        <path d="M20 0 C60 100 -20 200 20 300 C60 400 -20 500 20 600 C60 700 -20 800 20 900" stroke="var(--accent)" stroke-width="4" fill="none" stroke-linecap="round"/>
-      </svg>
+      
       <div class="event">
         <h2>HP — Director of Product Management</h2>
         <p class="italic">2022 – Present</p>
@@ -256,7 +276,11 @@
   <section id="patents" class="section">
     <h1>Patents</h1>
     <div class="card">
-      <h3>Preventing the Number of Meeting Attendees at a Videoconferencing Endpoint from Becoming Unsafe</h3>
+      <h3>
+        <a href="https://patents.google.com/patent/US20220051541A1/en" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;">
+          Preventing the Number of Meeting Attendees at a Videoconferencing Endpoint from Becoming Unsafe
+        </a>
+      </h3>
       <p>Patent holder. Innovation focused on improving safety and automation within intelligent meeting room systems.</p>
     </div>
   </section>
@@ -281,3 +305,4 @@
   </script>
 </body>
 </html>
+
