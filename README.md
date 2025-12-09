@@ -10,9 +10,7 @@ The portfolio is built as a **fully static HTML site** and is hosted using **Git
 
 ## Live Site
 
-👉 https://<your-github-username>.github.io  
-(or https://<your-github-username>.github.io/<repo-name> if using a project repo)
-
+👉 https://robertmanassero.github.io
 ---
 
 ## Tech Stack
